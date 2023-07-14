@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== UNICONS ===============-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="/your-path-to-your-compiled-css-including-fontawesome/file.css" rel="stylesheet">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Portfolio Website</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">Tarun <span class="vaka">Vaka</span></a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="#home" class="nav__link active-link">Home</a></li>
+
+            <li><a href="#about" class="nav__link">About</a></li>
+
+            <li><a href="#services" class="nav__link">Certifications</a></li>
+
+            <li><a href="#portfolio" class="nav__link">Projects</a></li>
+
+            <li><a href="#contact" class="nav__link">Contact</a></li>
+            
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="ui uil-times"></i>
+          </div>
+        </div>
+
+        <div class="nav__socials">
+          <a href="https://www.linkedin.com/in/tarunvaka/" class="nav__social-link" target="_blank">
+            <i class="uil uil-linkedin"></i>
+          </a>
+
+          <a href="https://github.com/Tarunvaka" class="nav__social-link" target="_blank">
+            <i class="uil uil-github"></i>
+          </a>
+
+          <a href="https://www.kaggle.com/tarunvaka" class="nav__social-link header__kaggle" target="_blank">
+            <i class="fa-brands fa-kaggle"></i>
+          </a>
+
+          <a href="https://www.instagram.com/tarun_vaka_/" class="nav__social-link" target="_blank">
+            <i class="uil uil-instagram-alt"></i>
+          </a>
+        </div>
+
+        <div class="nav__btns">
+          <a href="#contact" class="nav__link-btn btn">Let's Talk</a>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== HOME ===============-->
+      <section class="home" id="home">
+        <div class="home__container container grid">
+          <div class="home__content">
+            <span class="home__subtitle">Journeying Through Insights</span>
+            <h1 class="home__title">
+              Hello, I'm Tarun Vaka, a passionate <span> Data Scientist </span>  pushing the limits of innovation
+            </h1>
+          </div>
+          <img src="./img/pondy2.jpg" alt="" class="home__img">
+        </div>
+      </section>
+        
+      <!--=============== ABOUT ===============-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <img src="./img/Downpic.jpg" alt="" class="about__img">
+          <div class="about__content">
+            <h2 class="section__title">About Me</h2>
+            <p class="about__description">Motivated student at SRM University Amaravati pursuing a Bachelor of Science degree. Skilled in Data Science, Web Development, and Video Editing. Proficient in Python, C++, Java, and experienced in object-oriented programming. Passionate about data science and web development. Aspiring Data Scientist with a strong commitment to continuous learning and leveraging data-driven approaches for informed decision-making.</p>
+            <div class="tabs__btns">
+              <span class="tabs__btn tab__active" data-target="#skills">Skills</span>
+              <span class="tabs__btn" data-target="#edu">Education</span>
+              <span class="tabs__btn" data-target="#exp">Experience</span>
+              <!-- <span class="tabs__btn" data-target="#award">Education Skills</span> -->
+            </div>
+            <div class="tabs__content">
+
+              <div class="tabs__item tab__active" data-content id="skills">
+                <div class="tabs__data grid">
+                  <p class="tabs__description">
+                    <span>Programming</span>
+                    <span>C, C++, Python, Java</span>
+                  </p>
+                  <p class="tabs__description">
+                    <span>Languages</span>
+                    <span>HTML, CSS, JavaScript</span>
+                  </p>
+                  <p class="tabs__description">
+                    <span>Dev Tools</span>
+                    <span>Visual Studio Code, Github, Jupyter Notebook</span>
+                  </p>
+                  <p class="tabs__description">
+                    <span>Libraries</span>
+                    <span>Pandas, Numpy, Scikit Learn, TensarFlow</span>
+                  </p>
+                  <p class="tabs__description">
+                    <span>Video Editing</span>
+                    <span>Adobe Premier Pro, Abode After Effects, FinalCut Pro</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="tabs__item" data-content id="edu">
+                <div class="tabs__data grid">
+                  <p class="tabs__description">
+                    <span>SRM University</span> - B.Tech
+                    <span>CGPA : <b>8.9</b></span>
+                  </p>
+                  <p class="tabs__description">
+                    <span>Aditya Junior College</span> - Intermediate 
+                    <span>Percentage : <b>97%</b></span>
+                  </p>
+                  <p class="tabs__description">
+                    <span>Aditya Educational Institutions</span> - Secondary Education
+                    <span>Percentage : <b>95%</b></span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="tabs__item" data-content id="exp">
+                <div class="tabs__data grid">
+                  <p class="tabs__description">
+                    <span>Data Analysis Intern</span> - (June 2023 - Present)
+                    <span>At Andhra Pradesh State Skill Development Corporation</span>
+                  </p>
+                  <p class="tabs__description">
+                    <span>Data Science Intern</span> - (July 2023 - Present) 
+                    <span>At CodersCave</span>
+                  </p>
+                  <p class="tabs__description">
+                    <span>Data Science Intern</span> - (July 2023 - Present) 
+                    <span>At LetsGrowMore</span>
+                  </p>
+                  <p class="tabs__description">
+                    <span>Web Development Intern</span> - (June 2023 - Present)
+                    <span>At Bharat Intern</span>
+                  </p>
+                  <p class="tabs__description">
+                    <span>Video Editing Intern</span> - (March 2023 - June 2023) 
+                    <span>At BragTech</span>
+                  </p>
+                </div>
+              </div>
+<!-- 
+              <div class="tabs__item" data-content id="award">
+                <div class="tabs__data grid">
+                  <p class="tabs__description">
+                    <span>User Experience design</span> -UI/UX 
+                    <span>Delight the user and make it work</span>
+                  </p>
+                  <p class="tabs__description">
+                    <span>User Experience design</span> -UI/UX 
+                    <span>Delight the user and make it work</span>
+                  </p>
+                  <p class="tabs__description">
+                    <span>User Experience design</span> -UI/UX 
+                    <span>Delight the user and make it work</span>
+                  </p>
+                </div>
+              </div> -->
+
+              
+
+              
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== SERVICES ===============-->
+      <section class="services section" id="services">
+        <h2 class="section__title">
+          My Certifications
+        </h2>
+        <p class="section__description">
+          Discover my impressive collection of certifications, showcasing my expertise in various domains. Each certificate represents a significant achievement, highlighting my commitment to continuous learning and professional growth.
+        </p>
+
+        <div class="services__container container grid">
+
+          <div class="service__item">
+            <i class="uil uil-graph-bar services__icon"></i>
+            <h3 class="services__title">Deep Learning</h3>
+            <p class="services__description">
+              A Great Learning course of Deep Learning
+            </p>
+            <p class="dot">.</p>
+            <a href="https://verify.mygreatlearning.com/verify/UETNXUVE" class="cert__link" target="new">View</a>
+          </div>
+
+          
+
+
+          <div class="service__item">
+            <i class="uil uil-graph-bar services__icon"></i>
+            <h3 class="services__title">Data Science</h3>
+            <p class="services__description">
+              Data Science Cource Completion Certificate in Internshala
+            </p>
+            <p class="dot">.</p>
+            <a href="https://trainings.internshala.com/s/v/3046193/7d79985d" class="cert__link" target="new">View</a>
+          </div>
+
+          <div class="service__item">
+            <i class="uil uil-adobe services__icon"></i>
+            <h3 class="services__title">BragTech</h3>
+            <p class="services__description">
+              Video Editing Internship Completion Certificate using Adobe Premier Pro
+            </p>
+            <p class="dot">.</p>
+            <a href="https://drive.google.com/file/d/1Yd1d080mNOPElv_1u0zGiyuvkX6clmbH/view?usp=sharing" class="cert__link" target="new">View</a>
+          </div>
+
+          <div class="service__item">
+            <i class="uil uil-chart-bar services__icon"></i>
+            <h3 class="services__title">Data Mining</h3>
+            <p class="services__description">
+              A Great Learning course of Data Mining using Python
+            </p>
+            <p class="dot">.</p>
+            <a href="https://verify.mygreatlearning.com/verify/HVFZMHYW" class="cert__link" target="new">View</a>
+          </div>
+
+          <!-- <div class="service__item">
+            <i class="fa-brands fa-kaggle services__icon"></i>
+            <h3 class="services__title">Kaggle</h3>
+            <p class="services__description">
+              Completion of Intro to Machine Learning
+            </p>
+            <p class="dot">.</p>
+            <a href="https://drive.google.com/file/d/1E1jn-vjFLXe1xYpn8GGBnMKqM_QWs0eH/view?usp=sharing" class="cert__link" target="new">View</a>
+          </div> -->
+
+          <div class="service__item">
+            <i class="fa-brands fa-kaggle services__icon"></i>
+            <h3 class="services__title">Machine Learning</h3>
+            <p class="services__description">
+              Completion of Intermediate to Machine Learning in Kaggel
+            </p>
+            <p class="dot">.</p>
+            <a href="https://drive.google.com/file/d/1QqrcPeNpMz1RnvabMNL06qAsVgUlfmZf/view?usp=sharing" class="cert__link" target="new">View</a>
+          
+          </div>
+
+          <div class="service__item">
+            <i class="uil uil-graph-bar services__icon"></i>
+            <h3 class="services__title">Statistics</h3>
+            <p class="services__description">
+              A Great Learning course of Statistics for Data Science
+            </p>
+            <p class="dot">.</p>
+            <a href="https://verify.mygreatlearning.com/verify/DKZSXGGI" class="cert__link" target="new">View</a>
+          </div>
+
+
+          <div class="service__item">
+            <i class="fa-brands fa-linkedin services__icon"></i>
+            <h3 class="services__title">CSS</h3>
+            <p class="services__description">
+              CSS Essential Training Course Completion Certificate in Linkedin
+            </p>
+            <p class="dot">.</p>
+            <a href="https://www.linkedin.com/learning/certificates/a2aa663e81299ef1a718c8399ea0818af517e2d76de1e8530cbdd1a0e9f657ab?trk=share_certificate" class="cert__link" target="new">View</a>
+          
+          </div>
+
+          <div class="service__item">
+            <i class="uil uil-chart-bar services__icon"></i>
+            <h3 class="services__title">Data Visualization</h3>
+            <p class="services__description">
+              A Great Learning course of Data Visualization using python
+            </p>
+            <p class="dot">.</p>
+            <a href="https://verify.mygreatlearning.com/verify/VLARREXW" class="cert__link" target="new">View</a>
+          </div>
+
+          <!-- <div class="service__item">
+            <i class="fa-brands fa-kaggle services__icon"></i>
+            <h3 class="services__title">Kaggle</h3>
+            <p class="services__description">
+              Data Visualisation Cource Completion Certificate
+            </p>
+            <p class="dot">.</p>
+            <a href="https://drive.google.com/file/d/1bW_VKKW_WpxztpH3sQYYWtsHXKR5nQMi/view?usp=sharing" class="cert__link" target="new">View</a>
+          </div> -->
+
+          <!-- <div class="service__item">
+            <i class="fa-brands fa-linkedin services__icon"></i>
+            <h3 class="services__title">Linkedin</h3>
+            <p class="services__description">
+              HTML Essential Training Course Completion Certificate in Linkedin 
+            </p>
+            <p class="dot">.</p>
+            <a href="https://www.linkedin.com/learning/certificates/2895cafb8fa2c65f2ebbdfc2028a811ab568011d274fe7d2b02a8283818e387f?trk=share_certificate" class="cert__link" target="new">View</a>
+          
+          </div> -->
+
+          
+
+          <!-- <div class="service__item">
+            <i class="fa-brands fa-kaggle services__icon"></i>
+            <h3 class="services__title">Kaggle</h3>
+            <p class="services__description">
+              Python Programming Cource Completion Certificate
+            </p>
+            <p class="dot">.</p>
+            <a href="https://drive.google.com/file/d/1rjaRgYzeuo9AN2u4OLcCvVoUazPTmyRM/view?usp=sharing" class="cert__link" target="new">View</a>
+          </div> -->
+
+          <div class="service__item">
+            <i class="uil uil-graph-bar services__icon"></i>
+            <h3 class="services__title">Exploratary Data Analysis</h3>
+            <p class="services__description">
+              A Great Learning course of Exploratary Data Analysis
+            </p>
+            <p class="dot">.</p>
+            <a href="https://verify.mygreatlearning.com/verify/VLARREXW" class="cert__link" target="new">View</a>
+          </div>
+
+          <div class="service__item">
+            <i class="fa-brands fa-kaggle services__icon"></i>
+            <h3 class="services__title">Feature Engineering</h3>
+            <p class="services__description">
+              Feature Engineering Cource Completion Certificate in Kaggle
+            </p>
+            <p class="dot">.</p>
+            <a href="https://drive.google.com/file/d/1rNo6-S-7CrqjMqZbZKGkO1Ue4h_OBXPi/view?usp=sharing" class="cert__link" target="new">View</a>
+          </div>
+
+          <!-- <div class="service__item">
+            <i class="fa-brands fa-linkedin services__icon"></i>
+            <h3 class="services__title">Linkedin</h3>
+            <p class="services__description">
+              Data Structures Course Completion Certificate in Linkedin
+            </p>
+            <p class="dot">.</p>
+            <a href="https://www.linkedin.com/learning/certificates/0fcf93cc6dea900e30d3af06db1709cc8cfade118ef66aabcdde24b91dedccc1?trk=share_certificate" class="cert__link" target="new">View</a>
+          
+          </div> -->
+
+          <!-- <div class="service__item">
+            <i class="fa-brands fa-linkedin services__icon"></i>
+            <h3 class="services__title">Linkedin</h3>
+            <p class="services__description">
+              HTML CSS Code Challengers Completion Certificate
+            </p>
+            <p class="dot">.</p>
+            <a href="https://www.linkedin.com/learning/certificates/5b6b59174012d93c9bde25e0de6b81422e83944474cff5262ff0e302619a97f3?trk=share_certificate" class="cert__link" target="new">View</a>
+          
+          </div> -->
+
+          <!-- <div class="service__item">
+            <i class="fa-brands fa-kaggle services__icon"></i>
+            <h3 class="services__title">Kaggle</h3>
+            <p class="services__description">
+              Intro to Programming Cource Completion Certificate
+            </p>
+            <p class="dot">.</p>
+            <a href="https://drive.google.com/file/d/1qaaXx1RXqXj9POrfQN7C2GLgQRkEjxc9/view?usp=sharing" class="cert__link" target="new">View</a>
+          </div> -->
+
+          <div class="service__item">
+            <i class="uil uil-chart-bar services__icon"></i>
+            <h3 class="services__title">Data Mining projects</h3>
+            <p class="services__description">
+              A Great Learning course of Data Mining Projects Using Python
+            </p>
+            <p class="dot">.</p>
+            <a href="https://verify.mygreatlearning.com/verify/TMPCFTQC" class="cert__link" target="new">View</a>
+          </div>
+
+          <div class="service__item">
+            <i class="uil uil-graph-bar services__icon"></i>
+            <h3 class="services__title">Hypothesis Testing</h3>
+            <p class="services__description">
+              A Great Learning course of Hypothesis Testing in Data Science
+            </p>
+            <p class="dot">.</p>
+            <a href="https://verify.mygreatlearning.com/verify/CAPQKOPZ" class="cert__link" target="new">View</a>
+          </div>
+
+
+        </div>
+        <h3 class="section__title" >
+          <a href="./Cert2/index.html" class="project__link" id="cert__link" target="_blank">See All My Certifications</a> 
+        </h3>
+        
+
+      </section>
+
+      <!--=============== PORTFOLIO ===============-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">
+          My latest projects
+        </h2>
+        <p class="section__description">
+          Delve into my diverse range of projects, highlighting my creativity and technical expertise. Each project encapsulates my passion for delivering exceptional results and solving real-world challenges. Explore my portfolio to witness the culmination of my skills across various domains and technologies.
+        </p>
+        <div class="portfolio__container container grid" >
+          <div class="portfolio__item">
+            <img src="./img/TitanicFinal.jpg" alt="" class="portfolio__img">
+            <div class="portfolio__data">
+              <a href="https://github.com/Tarunvaka/Titanic-survival-prediction/tree/main" class="project__link" target="new">
+                <p class="portfolio__subtitle">Data Science</p>
+                <h3 class="portfolio__title">Titanic Survival Prediction</h3>
+                <p class="portfolio__description">Survival prediction of Titanic Dataset Using Machine Learning Model</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="portfolio__item">
+            <img src="./img/musicFinal.jpg" alt="" class="portfolio__img">
+            <div class="portfolio__data">
+              <a href="https://github.com/Tarunvaka/Music-Recommendation-System" class="project__link" target="new">
+                <p class="portfolio__subtitle">Machine Learning</p>
+                <h3 class="portfolio__title">Music Recommendation System</h3>
+                <p class="portfolio__description">Music Recommendation System based on Popularity and Item Similarity</p>
+              </a>
+            </div>
+          </div>
+
+          <!-- <div class="portfolio__item">
+            <img src="./img/TitanicFinal.jpg" alt="" class="portfolio__img">
+            <div class="portfolio__data">
+              <p class="portfolio__subtitle">Development</p>
+              <h3 class="portfolio__title">Web Development</h3>
+              <p class="portfolio__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div> -->
+
+          <!-- <div class="portfolio__item">
+            <img src="./img/TitanicFinal.jpg" alt="" class="portfolio__img">
+            <div class="portfolio__data">
+              <p class="portfolio__subtitle">Development</p>
+              <h3 class="portfolio__title">Web Development</h3>
+              <p class="portfolio__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div> -->
+
+          <div class="portfolio__item">
+            <img src="./img/FoodFinal.jpg" alt="" class="portfolio__img">
+            <div class="portfolio__data">
+              <a href="https://tarunvaka.github.io/food_munch/Food%20Munch/" class="project__link" target="new">
+                <p class="portfolio__subtitle">Web Development</p>
+                <h3 class="portfolio__title">Food Munch</h3>
+                <p class="portfolio__description">A Static website build using HTML and CSS </p>
+              </a>
+            </div>
+          </div>
+
+          <div class="portfolio__item">
+            <img src="./img/HouseFinal.jpg" alt="" class="portfolio__img">
+
+            <div class="portfolio__data">
+              <a href="https://github.com/Tarunvaka/House-prices-data-analysis" class="project__link" target="new">
+                <p class="portfolio__subtitle">Data Analysis</p>
+                <h3 class="portfolio__title">House Price Analysis</h3>
+                <p class="portfolio__description">House Price Prediction Analysis using Machine Learning Algorithms</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="portfolio__item">
+            <img src="./img/FlightFinal.jpg" alt="" class="portfolio__img">
+
+            <div class="portfolio__data">
+              <a href="https://github.com/Tarunvaka/Flight-Booking-Management-System" class="project__link" target="new">
+                <p class="portfolio__subtitle">Python</p>
+                <h3 class="portfolio__title">Flight Booking System</h3>
+                <p class="portfolio__description">Flight Booking Management System using python</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="portfolio__item">
+            <img src="./img/portfolio-6.jpg" alt="" class="portfolio__img">
+            <div class="portfolio__data">
+              <a href="https://tarunvaka.github.io/Netflix-HomePage/" class="project__link" target="new">
+                <p class="portfolio__subtitle">Web Development</p>
+                <h3 class="portfolio__title">Netflix Home Page</h3>
+                <p class="portfolio__description">Netflix Home page created using HTML</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <h3 class="section__title" >
+          <a href="https://github.com/Tarunvaka?tab=repositories" class="project__link" id="cert__link" target="_blank">See more Projects</a> 
+        </h3>
+        
+      </section>
+
+      <!--=============== CONTACT ===============-->
+      <section class="contact section" id="contact">
+        <div class="contact__container container grid">
+          <div class="contact__content">
+            <h2 class="section__title">Contact</h2>
+            <p class="contact__description">Thank you for visiting my website! If you have any inquiries, project proposals, or simply want to get in touch, I would be delighted to hear from you. Please use the contact details provided below to reach out to me. I am excited to discuss your ideas, collaborate on projects, and provide any assistance you may need. I strive to respond promptly, so you can expect a timely and engaging conversation. Looking forward to connecting with you!<br><br>
+              <i class="uil uil-phone"></i>
+              <a href="tel:+917661057152">+91-7661057152</a><br>
+              <i class="uil uil-envelope-alt"></i>
+              <a href="mailto:tarun_vaka@srmap.edu.in">tarun_vaka@srmap.edu.in</a>
+              <p class="contact__description">Get in touch by filling out the form below. I'm eager to connect and discuss opportunities with you!</p>
+            </p>
+
+            <form class="contact__form" id="contact-form">
+              
+              <div class="contact__form-input">
+                <input type="text" name="name" placeholder="Your Name *" id="contact-name" class="contact__input">
+              </div>
+
+              <div class="contact__form-input">
+                <input type="email" name="email" placeholder="Your E-mail *" id="contact-email" class="contact__input">
+              </div>
+
+              <div class="contact__form-input">
+                <input type="text" name="subject" placeholder="Write a Subject" id="contact-subject" class="contact__input">
+              </div>
+
+              <div class="contact__form-input">
+                <textarea name="message" id="contact-message" cols="30" class="contact__input textarea" placeholder="Your Message" rows="10"></textarea>
+              </div>
+              
+              <input type="submit" name="submit" value="Submit" class="btn" >
+
+              <p class="error__message" id="error-message"></p>
+              
+            </form>
+          </div> 
+          <!-- <img src="./img/gett.png" alt="" class="contact__img"> -->
+        </div>
+        
+        
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <a href="index.html" class="footer__logo">Tarun <span class="vaka">Vaka</span></a>
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/in/tarunvaka/" class="footer__social-link" target="_blank">
+            <i class="uil uil-linkedin"></i>
+          </a>
+
+          <a href="https://github.com/Tarunvaka" class="footer__social-link" target="_blank">
+            <i class="uil uil-github"></i>
+          </a>
+
+          <a href="https://www.kaggle.com/tarunvaka" class="footer__social-link" target="_blank">
+            <i class="fa-brands fa-kaggle"></i>
+          </a>
+
+          <a href="https://www.instagram.com/tarun_vaka_/" class="footer__social-link" target="_blank">
+            <i class="uil uil-instagram-alt"></i>
+          </a>
+        </div>
+        <p class="footer__copyright">&copy; 2023. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-angle-up scrollup__icon"></i>
+    </a>
+
+    <!--=============== EMAIL JS ===============-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="./main.js"></script>
+    <script src="https://kit.fontawesome.com/84b042d313.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      window.addEventListener("scroll",function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky",window.scrollY >= 85);
+      })
+    </script>
+  </body>
+</html>
